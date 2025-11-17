@@ -1,174 +1,133 @@
-GROUND-TRUTH PERFORMANCE ANALYSIS — SU WOMEN’S LACROSSE 2025
-Phase 1 – Step 4 Deliverable (Objective, Unbiased Statistical Summary)
+# Ground Truth Summary — SU Women’s Lacrosse 2025 (Game-Level Data)
+Phase 1 — Step 4
 
-This document defines the objective performance patterns in the 2025 Syracuse University Women’s Lacrosse season.
-It contains no narrative framing, no interpretation bias, and is used as the baseline reference for evaluating LLM outputs in later phases.
+This document provides the objective, unbiased statistical ground truth that all LLM outputs will be evaluated against. No narrative framing, interpretation, or subjective language is included.
 
-1. Overall Record
-Metric	Value
-Total Games	19
-Wins	11
-Losses	8
-Win Percentage	57.9%
+---
 
-Ground truth: The team had a slightly above-average season by overall record.
+## 1. Dataset Overview
 
-2. Total Season Scoring
-Metric	Value
-Total Goals For	249
-Total Goals Against	243
-Season Goal Differential	+6
-Per-Game Averages
-Metric	Value
-Avg Goals For	13.1
-Avg Goals Against	12.8
-Avg Margin	+0.3
+- **Total Games:** 19  
+- **Wins:** 11  
+- **Losses:** 8  
+- **Win Percentage:** 57.9%  
 
-Ground truth: Syracuse scored slightly more than they conceded across the season.
+### Scoring
+- **Goals For:** 249  
+- **Goals Against:** 243  
+- **Season Goal Differential:** +6  
 
-3. Performance by Season Phase
-Early Season (Games 1–8)
+### Per-Game Averages
+- **Avg Goals For:** 13.1  
+- **Avg Goals Against:** 12.8  
+- **Avg Margin:** +0.3  
 
-Record: 3–5
+**Ground truth:** Syracuse had a slightly above-average season with a small positive scoring margin.
 
-Goal Differential: -3
+---
 
-Pattern:
+## 2. Performance by Season Phase
 
-Two large early wins (G1 +12, G7 +9)
+### Early Season (Games 1–8)
+- Record: **3–5**
+- Goal Differential: **−3**
+- Details:
+  - Two large wins (+12, +9)
+  - Close losses to ranked teams (#10, #14)
+  - Heavy losses to #2 and #3
 
-Several close losses to ranked teams (#10, #14)
+**Ground truth:** Early season was inconsistent.
 
-Heavy losses to #2 and #3 opponents
+### Mid Season (Games 9–16)
+- Record: **6–2**
+- Goal Differential: **−19** (skewed by G16: −15)
+- Goal Differential without G16: **−4**
+- Details:
+  - Several solid wins (+6, +12, +6)
+  - Close wins vs ranked (#11, #20)
+  - One extreme loss (−15 vs #2)
 
-Ground truth: Early season was inconsistent.
+**Ground truth:** Best win percentage but distorted by a single major loss.
 
-Mid Season (Games 9–16)
+### Postseason (Games 17–19)
+- Record: **1–2**
+- Details:
+  - NCAA win (+6)
+  - Competitive ranked losses (−5 vs #3, −1 vs #7)
 
-Record: 6–2
+**Ground truth:** Competitive postseason but short of advancing.
 
-Goal differential: -19 (heavily affected by G16’s −15 loss)
+---
 
-Goal differential without G16: -4
+## 3. Performance vs Ranked vs Unranked Opponents
 
-Patterns:
+### Ranked Opponents
+Ranks faced: #2, #3, #7, #10, #11, #14, #17, #20  
+- Record: **4–7**
+- Patterns:
+  - Close losses (−1 ×3)
+  - Close ranked wins (#17 +3, #20 +1, #11 +1)
+  - Heavy losses vs top-tier (#2: −8, −15; #3: −5)
 
-Strong wins: G9 (+6), G14 (+12), G15 (+6)
+**Ground truth:** Good competitiveness vs mid-ranked teams, difficulty vs top-3.
 
-Two close wins vs ranked teams (#11, #20)
+### Unranked Opponents
+- Record: **7–1**
+- Details:
+  - Two +12 wins (G1, G14)
+  - Only loss: G13 (−3)
 
-One extreme loss vs #2 (G16: −15)
+**Ground truth:** Strong performance vs unranked teams.
 
-Ground truth: Mid-season had the strongest win rate, but one extreme loss distorts the average.
+---
 
-Postseason (Games 17–19)
+## 4. Largest Margins
 
-Record: 1–2
+### Largest Wins
+- G1: +12  
+- G14: +12  
+- G7: +9  
+- G3: +8  
 
-Results:
+### Largest Losses
+- G16: −15  
+- G4: −8  
+- G17: −5  
 
-G18: Win (+6, NCAA Tournament)
+**Ground truth:** Extreme losses occurred mainly vs highly ranked opponents.
 
-G17: Loss (−5 vs #3)
+---
 
-G19: Loss (−1 vs #7)
+## 5. Home / Away / Neutral Splits
 
-Ground truth: Postseason performance was competitive but resulted in two ranked losses.
+- **Home (H):** 4–4  
+- **Away (A):** 5–3  
+- **Neutral (N):** 1–2  
 
-4. Performance vs Ranked and Unranked Opponents
-Ranked Opponents
+**Ground truth:** Team performed slightly better away than at home.
 
-Ranks appearing: #2, #3, #7, #10, #11, #14, #17, #20
+---
 
-Record vs Ranked:
+## 6. Close Game Performance (≤ 2 Goals)
 
-4 wins
+- Close Games: **7**
+- Record: **3–4**
 
-7 losses
+**Ground truth:** Slightly negative performance in tight games.
 
-Ranked Game Patterns:
+---
 
-Close losses: (−1 vs #14, −1 vs #10, −1 vs #7)
+## 7. Overall Ground Truth Summary
 
-Heavy losses: (−15 vs #2, −8 vs #2)
+The dataset establishes these objective facts:
 
-Close ranked wins: (#17 +3, #20 +1, #11 +1)
+1. Syracuse had a moderately successful season (11–8, +6 differential).  
+2. The team was very strong vs unranked opponents (7–1).  
+3. Against ranked teams, performance was competitive but inconsistent (4–7).  
+4. Major losses came against top-tier teams (#2, #3).  
+5. Early season was inconsistent; midseason had the strongest win rate; postseason was competitive but 1–2.  
+6. Slightly better performance in away games.  
+7. Close games leaned slightly negative (3–4).  
+8. Extreme performances (large wins or losses) were isolated, not season-wide patterns.
 
-Ground truth: Competitive in many ranked matchups, but struggled against top-3 opponents.
-
-Unranked Opponents
-
-Record vs Unranked:
-
-7 wins
-
-1 loss
-
-Patterns:
-
-Two +12 blowout wins (G1, G14)
-
-Only loss: G13 (−3)
-
-Ground truth: Syracuse performed very strongly against unranked teams.
-
-5. Largest Margins
-Largest Wins
-Game	Margin
-G1	+12
-G14	+12
-G7	+9
-G3	+8
-Largest Losses
-Game	Margin
-G16	−15
-G4	−8
-G17	−5
-
-Ground truth: The extremes mostly occurred against highly ranked opponents.
-
-6. Home / Away / Neutral Splits
-Location	Record
-Home (H)	4–4
-Away (A)	5–3
-Neutral (N)	1–2
-
-Ground truth: The team performed slightly better away than at home.
-
-7. Close Games (Decided by ≤ 2 Goals)
-
-Number of close games: 7
-
-Record in close games: 3–4
-
-Ground truth: Slightly negative edge in tight contests.
-
-8. Objective Summary (No Narrative Interpretation)
-
-The ground-truth statistical profile of the season is:
-
-Record: 11–8 (57.9%)
-
-Scoring: +6 total differential
-
-Patterns:
-
-Strong vs unranked opponents (7–1)
-
-Competitive but inconsistent vs ranked opponents (4–7)
-
-Struggled against top-tier opponents (#2, #3)
-
-Season phases:
-
-Early: inconsistent (3–5)
-
-Mid: best win rate (6–2) but inflated negative differential due to one extreme loss
-
-Postseason: 1–2 with close games
-
-Home/away: Better away record
-
-Close games: Slight negative performance in tight margins
-
-This is the unbiased reference for detecting LLM distortion, exaggeration, omission, or selective emphasis in subsequent phases.
+This ground truth is the reference for detecting bias in LLM narratives.
